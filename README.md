@@ -33,13 +33,14 @@ Key features in the dataset include:
    - Create new features to enhance model performance.
    - Select important features based on statistical analysis and correlation with survival.
 
-3. **Modeling**:
-   - Experiment with various classification models such as Logistic Regression, Random Forest, and Support Vector Machines.
-   - Evaluate model performance using cross-validation to ensure robustness.
+3. **Modeling and Ensemble Method**:
+   - Train multiple classification models, including Logistic Regression, Random Forest, and Support Vector Machines.
+   - Use ensemble techniques, such as Voting Classifier, to combine the strengths of different models for improved accuracy and generalization.
 
-4. **Model Tuning**:
-   - Tune hyperparameters to improve accuracy.
-   - Use Grid Search or Random Search to find the optimal model parameters.
+4. **Hyperparameter Tuning with Grid Search CV**:
+   - Apply Grid Search Cross-Validation (Grid Search CV) to find optimal hyperparameters for the models.
+   - Test combinations of parameters (e.g., max_depth, n_estimators, min_samples_split) to maximize model performance.
+   - Choose the best hyperparameters based on cross-validation results, which improve model robustness and accuracy on the validation set.
 
 ## Evaluation Metric
 
@@ -51,7 +52,7 @@ Accuracy = (TP + TN) / (TP + TN + FP + FN)
 
 ## Results
 
-The final model achieved an accuracy of **[your accuracy score]%** on the validation set and **[your score]%** on the Kaggle leaderboard. Techniques such as feature engineering, model ensembling, and hyperparameter tuning helped enhance the model's performance.
+The final model achieved an accuracy of **84%** on the validation set and **77.751%** on the Kaggle leaderboard. Techniques such as feature engineering, model ensembling, and hyperparameter tuning helped enhance the model's performance.
 
 ## Conclusion
 
